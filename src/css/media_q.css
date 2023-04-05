@@ -1,0 +1,23 @@
+@media only screen and (max-width: 769px) {
+  #root .container header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+  }
+  #root .container header .header__img {
+    display: none;
+  }
+  #root .container .section_form .form .form__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    justify-items: start;
+    align-items: center;
+  }
+  #root .container .section_form .form .form__box .btn {
+    grid-column: 2/3;
+    justify-content: end;
+  }
+}/*# sourceMappingURL=media_q.css.map */

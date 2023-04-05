@@ -1,0 +1,38 @@
+@import 'variables';
+
+//Small device
+@media only screen and (max-width: 769px) {
+  #root {
+    .container {
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 1rem;
+        margin-bottom: 2rem;
+
+        .header__img {
+          display: none;
+        }
+      }
+
+      .section_form {
+        .form {
+          .form__box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+
+            justify-items: start;
+            align-items: center;
+
+            .btn {
+              grid-column: 2/3;
+              justify-content: end;
+            }
+          }
+        }
+      }
+    }
+  }
+}

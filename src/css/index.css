@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Verdana";
+}
+
+.btn {
+  width: 9rem;
+  height: 2.5rem;
+  border-radius: 1rem;
+  border: transparent;
+  color: white;
+  background-color: #0583f2;
+  font-family: "Verdana";
+  font-size: 1rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #0597f2;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-color: #e9eef6;
+}
+#root .container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  background-color: #e9eef6;
+}
+#root .container header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#root .container header .header__img {
+  width: 100%;
+  max-width: 380px;
+}
+#root .container header .header__textbox h2 {
+  color: #0583f2;
+  font-size: 4.3rem;
+}
+#root .container header .header__textbox h2::first-letter {
+  text-transform: uppercase;
+}
+#root .container header .header__textbox p {
+  font-style: italic;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+#root .container header .header__textbox .header__tasks {
+  display: flex;
+  gap: 8%;
+  width: 100%;
+  margin-top: 2.5rem;
+}
+#root .container header .header__textbox .header__tasks .h_tasks__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  padding: 0.3rem;
+}
+#root .container header .header__textbox .header__tasks .h_tasks__box.all {
+  background-color: #f8f3d7;
+}
+#root .container header .header__textbox .header__tasks .h_tasks__box.done {
+  background-color: #d1e7dd;
+}
+#root .container header .header__textbox .header__tasks .h_tasks__box.unfinished {
+  background-color: #f8d7da;
+}
+#root .container header .header__textbox .header__tasks .h_tasks__box .task__text {
+  color: black;
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 0.95rem;
+}
+#root .container header .header__textbox .header__tasks .h_tasks__box .taks__num {
+  color: black;
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+#root .container .section_form .form {
+  max-width: 800px;
+  width: 100%;
+  height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 1rem;
+  box-shadow: 1px 2px 25px #758c9b;
+  background-color: #f6f8fc;
+  margin: 0 auto;
+}
+#root .container .section_form .form .form__input--text {
+  width: 90%;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border: solid 1px #c8c8c5;
+  border: transparent;
+  background-color: #e7e7e7;
+  padding-left: 0.3rem;
+}
+#root .container .section_form .form .form__input--text:hover {
+  background-color: #ededed;
+}
+#root .container .section_form .form .form__input--text:focus {
+  outline: 3px solid transparent;
+}
+#root .container .section_form .form .form__box {
+  width: 90%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#root .container .section_form .form .form__box .form__select {
+  width: 8rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border: solid 1px #c8c8c5;
+  background-color: #e7e7e7;
+  cursor: pointer;
+  padding-left: 0.3rem;
+}
+#root .container .section_form .form .form__box .form__select:hover {
+  background-color: #ededed;
+}
+#root .container .section_form .form .form__box .form__check label {
+  margin-right: 0.5rem;
+}
+#root .container .section_form .form .form__box .form__check input[type=checkbox] {
+  font: inherit;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 0.3rem;
+  border: solid 1px #c8c8c5;
+  transform: translateY(0.2rem);
+}
+#root .container .itemsPanel__container {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#root .container .itemsPanel__container .item__sport {
+  background-color: #cffaf0;
+}
+#root .container .itemsPanel__container .item__sport .item__category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  color: #4d8076;
+  background-color: #9feddb;
+}
+#root .container .itemsPanel__container .item__clean {
+  background-color: #fbeaff;
+}
+#root .container .itemsPanel__container .item__clean .item__category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  color: #9d86b9;
+  background-color: #f2d3f9;
+}
+#root .container .itemsPanel__container .item__prace {
+  background-color: #fde8e5;
+}
+#root .container .itemsPanel__container .item__prace .item__category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  color: #dc5b4d;
+  background-color: #fed0c8;
+}
+#root .container .itemsPanel__container .item__studium {
+  background-color: #fefedf;
+}
+#root .container .itemsPanel__container .item__studium .item__category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  color: #b0b06d;
+  background-color: #fafac1;
+}
+#root .container .itemsPanel__container .item__container {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+  height: 95px;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin-top: 2rem;
+  box-shadow: 1px 5px 15px rgba(172, 172, 172, 0.831);
+}
+#root .container .itemsPanel__container .item__box--category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+#root .container .itemsPanel__container .item__box--name {
+  padding: 0 1rem;
+}
+#root .container .itemsPanel__container .item__box--name .item__name {
+  font-size: 1.25rem;
+}
+#root .container .itemsPanel__container .item__box--buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+#root .container .itemsPanel__container .item__box--buttons .item__important {
+  font-size: 1.9rem;
+  color: #ff0000;
+}
+#root .container .itemsPanel__container .item__buttons {
+  display: flex;
+  gap: 1rem;
+}
+#root .container .itemsPanel__container .item__buttons .item__buttons--edit, #root .container .itemsPanel__container .item__buttons .item__buttons--delete {
+  color: #0583f2;
+  background: transparent;
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer;
+}
+#root .container .itemsPanel__container .item__buttons .item__buttons--edit:hover, #root .container .itemsPanel__container .item__buttons .item__buttons--delete:hover {
+  color: #0597f2;
+}/*# sourceMappingURL=index.css.map */
